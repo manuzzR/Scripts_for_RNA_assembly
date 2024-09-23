@@ -59,7 +59,7 @@ tableGOplot = rbind(tables_top[[1]], tables_top[[2]], tables_top[[3]]) %>%
   data.frame
 
 write.table(tableGOplot,file = "/home/manorala/scratch/Functional_annotation/tableGOPlot.txt", row.names = F, 
-            col.names = T, append = F, quote = F, sep = "\t")
+            col.names = T, append = F, quote = F, sep = "\t") #saving file in our working directory.
 ' > tmp
 
 Rscript --vanilla tmp
